@@ -4,28 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/styles.css"/>
-    <title>Programación Funcional con Javascript</title>
+    <title>Manejaor de Nóminas</title>
 </head>
 <body>
     <div class="container">
         <header id="header">
-            <h1>Calories Counter</h1>
+            <h1>Manejador de Nóminas (Oficina de Afectación)</h1>
         </header>
         <div class="table-container">
             <table>
                 <thead>
                     <tr>
-                        <th>Description</th>
-                        <th>Calories</th>
-                        <th>Carbs</th>
-                        <th>Protein</th>
+                        <th>Nóminas 2022</th>
+                        <th>Percepciones</th>
+                        <th>Deducciones</th>
+                        <th>Total</th>
                     </tr>
                 </thead>
                 <tbody id="list-items">
                 </tbody>
                 <tfoot>
                     <tr>
-                        <td id="total">Total</td>
+                        <td id="total">Concepto</td>
                         <td id="total-calories">0</td>
                         <td id="total-carbs">0</td>
                         <td id="total-protein">0</td>
@@ -36,10 +36,10 @@
         <div class="form-container">
             <form action="javascript:void(0);">
                 <div>
-                    <input type="text" name="description" id="description" placeholder="Description">
-                    <input type="number" min="0" name="calories" id="calories" placeholder=" Calories">
-                    <input type="number" min="0" name="carbs" id="carbs" placeholder="Carbs">
-                    <input type="number" min="0" name="protein" id="protein" placeholder="Protein">
+                    <input type="text" name="description" id="description" placeholder="Descripción:">
+                    <input type="number" min="0" name="calories" id="calories" placeholder=" Percepciones:">
+                    <input type="number" min="0" name="carbs" id="carbs" placeholder="Deducciones:">
+                    <input type="number" min="0" name="protein" id="protein" placeholder="Total:">
                 </div>
                 <button class="add" id="add">+</button>
             </form>
